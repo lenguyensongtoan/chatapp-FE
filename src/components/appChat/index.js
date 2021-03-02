@@ -1,6 +1,8 @@
+import CardProfile from "../elements/CardProfile"
 const AppChat = () => {
   return (
     <div className="app-main">
+      <CardProfile/>
       <div className="chat-wrapper">
         <div className="message-wrapper reverse">
           <img

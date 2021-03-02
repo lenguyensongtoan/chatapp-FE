@@ -5,6 +5,15 @@
   background-color: var(--box-color);
   display: flex;
   align-items: center;
+  &--item {
+    @include size(50px, 50px);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+  }
   &--active {
     background-color: var(--message-box-1);
   }
@@ -61,6 +70,7 @@
   &-notification {
     display: flex;
     @include size(300px, 70px);
+    @include mt(10px);
 
     &__img > img {
       @include size(50px, 50px);
@@ -105,6 +115,31 @@
         @include fs(14, 16);
         color: $gray-600;
         font-weight: 200;
+      }
+    }
+  }
+
+  &-profile {
+    display: flex;
+    height: 5vh;
+    align-items: center;
+    li {
+      @include mx(10px);
+      @include size(30px, 30px);
+      cursor: pointer;
+      img {
+        @include size(40px, 40px);
+        object-fit: cover;
+      }
+    }
+    &__content {
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+
+      &--res {
+        @include fs(14, 16);
+        color: var(--text-dark);
       }
     }
   }

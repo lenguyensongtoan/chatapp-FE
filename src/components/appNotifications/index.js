@@ -11,6 +11,10 @@ const AppNotification = () => {
         <CardNotification />
         <CardNotification />
         <CardNotification />
+        <CardNotification />
+        <CardNotification />
+        <CardNotification />
+        <CardNotification />
       </div>
       <div className="app-activity-box">
         <div className="activity-info-boxes">
@@ -148,6 +152,9 @@ const AppNotification = () => {
         </div>
       </div>
       <div className="app-right__group-noti mt-3">
+        <CardSugest/>
+        <CardSugest/>
+        <CardSugest/>
         <CardSugest/>
         <CardSugest/>
         <CardSugest/>

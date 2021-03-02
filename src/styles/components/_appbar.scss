@@ -1,26 +1,22 @@
 .app-bar {
   display: flex;
-  &--img > img {
-    @include size(48px, 48px);
-    border-radius: 50%;
-    object-fit: cover;
-    @include ml(10px);
-  }
+  height: 5vh;
   li {
-    @include mx(10px);
-    @include size(40px, 40px);
+    @include mx(20px);
+    @include size(30px, 30px);
     cursor: pointer;
     img {
-      @include size(40px, 40px);
+      @include size(30px, 30px);
+      border-radius: 50%;
+      object-fit: cover;
     }
   }
   &--item {
+    @include size(30px, 30px);
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50px;
-    height: 50px;
     border: none;
     outline: none;
   }
@@ -28,12 +24,12 @@
 
 .icon-button__badge {
   position: absolute;
-  top: -10px;
-  right: -10px;
-  width: 25px;
-  height: 25px;
-  background: red;
+  top: -5px;
+  right: -5px;
+  @include size(15px, 15px);
+  background: var(--button-bg);
   color: #ffffff;
+  @include fs(12, 16);
   display: flex;
   justify-content: center;
   align-items: center;

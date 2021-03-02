@@ -8,7 +8,7 @@ function Card({ active }) {
     cardActive = "";
   }
   return (
-    <div className={`card mt-2 ${cardActive}`}>
+    <div className={`card mt-2 mr-2 ${cardActive}`}>
       <div className="card__img">
         <img
           alt=""
