@@ -1,6 +1,9 @@
 .app-bar {
   display: flex;
+  align-items: center;
   height: 5vh;
+  margin-bottom: 1rem !important;
+
   li {
     @include mx(20px);
     @include size(30px, 30px);

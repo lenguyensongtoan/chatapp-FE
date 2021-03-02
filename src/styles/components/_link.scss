@@ -1,5 +1,6 @@
 .link {
   display: flex;
+  margin-left: 1rem  !important;
   li {
     @include mx(10px);
     position: relative;

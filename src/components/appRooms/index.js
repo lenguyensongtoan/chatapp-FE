@@ -13,7 +13,7 @@ const AppRooms = () => {
         <div className="mt-2">
           <Link />
         </div>
-        <div className="mx-3">
+        <div className="mx-3 mt-3">
           <SearchBox />
         </div>
       </div>

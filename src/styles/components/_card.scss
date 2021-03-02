@@ -19,7 +19,7 @@
   }
   &__img {
     @include ml(10px);
-    
+
     img {
       @include size(48px, 48px);
       border-radius: 50%;
