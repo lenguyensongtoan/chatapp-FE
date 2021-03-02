@@ -6,8 +6,15 @@
   overflow: auto;
   background-color: var(--app-bg);
   @include mr(20px);
-
-
+  @include small-down {
+    display: none;
+  }
+  @include medium-only {
+    display: none;
+  }
+  @include medium-up {
+    height: 98vh;
+  }
   &__group-noti {
     @include border-radius(8px);
     background-color: var(--box-color);

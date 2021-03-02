@@ -130,5 +130,7 @@ body {
 
 .app-container {
   display: flex;
+  @include small-down {
+    width: 100vw;
+  }
 }
-

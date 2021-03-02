@@ -30,7 +30,6 @@
 @import "elements/_nav";
 
 //components
-@import "components/_main";
 @import 'components/_card';
 @import 'components/_searchbox';
 @import 'components/_appbar';
@@ -44,7 +43,6 @@
 @import "utilities/_transition";
 //
 @import "./main";
-@import "./auth";
 @import "./room";
 @import "./chat";
 @import "./notification";

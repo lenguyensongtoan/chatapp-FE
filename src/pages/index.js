@@ -42,7 +42,7 @@ export default function Index() {
     });
   }, []);
   return (
-    <div>
+    <>
       <main>
         <div className="app-container">
           <AppRooms />
@@ -59,8 +59,7 @@ export default function Index() {
           </div> */}
         </div>
       </main>
-
       <footer></footer>
-    </div>
-  );
+    </>
+  )
 }

@@ -1,6 +1,5 @@
 .app-main {
   flex: 3;
-  height: 100vh;
   background-color: var(--box-color);
   border-radius: 8px;
   padding: 8px;
@@ -8,6 +7,19 @@
   flex-direction: column;
   transition: 0.2s;
   margin-right: 15px;
+  height: calc(100vh - 20px);
+  margin: 10px;
+
+  @include small-down {
+    margin: 0;
+    padding: 0;
+    padding-left: 10px;
+    padding-top: 10px;
+    height: 100vh;
+  }
+  @include medium-only {
+    margin: 0;
+  }
 
   &-header {
     position: sticky;
@@ -18,9 +30,11 @@
 }
 
 .chat-wrapper {
-  overflow: auto;
   overflow-y: scroll;
   max-height: calc(100vh - 118px);
+  @include small-down {
+    height: calc(100vh - 130px);
+  }
   padding: 8px;
 }
 
