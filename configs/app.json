@@ -1,0 +1,4 @@
+{
+  "apiEndpoint": "http://10.8.15.136:3000/auth/api/",
+  "apiTimeOut": 5000
+}

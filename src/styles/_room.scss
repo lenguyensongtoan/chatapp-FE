@@ -1,0 +1,16 @@
+.app-left {
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+
+  &__content {
+    background-color: var(--app-bg);
+  }
+}
+
+.app-left-header {
+  h1 {
+    font-size: 24;
+    color: var(--text-dark);
+  }
+}

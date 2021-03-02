@@ -1,0 +1,32 @@
+.link {
+  display: flex;
+  li {
+    @include mx(10px);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  font-weight: 500;
+  color: $gray-600;
+
+  &--active {
+    font-weight: 600;
+    color: $black;
+  }
+}
+.item__badge {
+  position: absolute;
+  top: -3px;
+  right: -10px;
+  width: 7px;
+  height: 7px;
+  background: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}

@@ -1,0 +1,3 @@
+@mixin fs($fontsize: 16, $base: 16) {
+  font-size: ($fontsize / $base) * 1rem;
+}

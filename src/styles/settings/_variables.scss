@@ -1,0 +1,171 @@
+/* ==========================================================================
+#Variables
+========================================================================== */
+// Define color
+$color_base: #333;
+$white     : #fff !default;
+$gray-100  : #f8f9fa !default;
+$gray-200  : #e9ecef !default;
+$gray-300  : #dee2e6 !default;
+$gray-400  : #ced4da !default;
+$gray-500  : #adb5bd !default;
+$gray-600  : #6c757d !default;
+$gray-700  : #495057 !default;
+$gray-800  : #343a40 !default;
+$gray-900  : #212529 !default;
+$black     : #000 !default;
+$blue      : #0d6efd !default;
+$indigo    : #6610f2 !default;
+$purple    : #6f42c1 !default;
+$pink      : #d63384 !default;
+$red       : #dc3545 !default;
+$orange    : #fd7e14 !default;
+$yellow    : #ffc107 !default;
+$green     : #198754 !default;
+$teal      : #20c997 !default;
+$cyan      : #0dcaf0 !default;
+
+$colors: (
+  "blue": $blue,
+  "indigo": $indigo,
+  "purple": $purple,
+  "pink": $pink,
+  "red": $red,
+  "orange": $orange,
+  "yellow": $yellow,
+  "green": $green,
+  "teal": $teal,
+  "cyan": $cyan,
+  "white": $white,
+  "gray": $gray-600,
+  "gray-dark": $gray-800,
+) !default;
+
+$primary: $blue !default;
+$secondary: $gray-600 !default;
+$success: $green !default;
+$info: $cyan !default;
+$warning: $yellow !default;
+$danger: $red !default;
+$light: $gray-100 !default;
+$dark: $gray-900 !default;
+
+$color-contrast-dark: $black !default;
+$color-contrast-light: $white !default;
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+  "light": $light,
+  "dark": $dark,
+) !default;
+
+// Define theme font-family
+$font_base: "Yu Gothic Medium", "游ゴシック Medium", "YuGothic", sans-serif;
+$font_yugo_bold: "Yu Gothic Bold", "游ゴシック Medium", "YuGothic", sans-serif;
+$font_poppin: "Poppins", "Yu Gothic Medium", "游ゴシック Medium", "YuGothic",
+  sans-serif;
+
+// Define theme font-size
+$fs_base: 16;
+$fs_lg: $fs_base * 1.25;
+$fs_sm: $fs_base * 0.875;
+$fs_h1: 50;
+$fs_h2: 30;
+$fs_h3: 24;
+$fs_h4: 20;
+$fs_h5: 18;
+$fs_h6: 14;
+
+$fs_base_sp: 14;
+$lh_base: 24;
+$lh_base_sp: 20;
+$fw_base: 400;
+
+// Define space base
+$space_base: 15;
+$space_base_px: 15px;
+
+//Breakpoint
+$small-width: 480px;
+$medium-width: 768px;
+$large-width: 1024px;
+
+//Spacing
+$spacer: 1rem !default;
+$spacers: (
+  0: 0,
+  1: $spacer / 4,
+  2: $spacer / 2,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+) !default;
+
+// Size content
+$width_content_pc: 1188;
+$width_content_pc_px: 1188px;
+$width_content_pc_design: 1420;
+$width_content_pc_design_px: 1420px;
+$width_content_sp_design: 750;
+$width_content_sp_design_px: 750px;
+$width_section_content: 794px;
+$width_section_sidebar: 306px;
+
+//Transitions
+$enable-transitions: true !default;
+$enable-reduced-motion: true !default;
+$transition-base: all 0.2s ease-in-out !default;
+$transition-fade: opacity 0.15s linear !default;
+$transition-collapse: height 0.35s ease !default;
+
+//Shadown
+$enable-shadows: false !default;
+$box-shadow: 0 0.5rem 1rem rgba($black, 0.15) !default;
+$box-shadow-inset: inset 0 1px 2px rgba($black, 0.075) !default;
+
+//Border
+$border-width: 1px !default;
+$border-widths: (
+  0: 0,
+  1: 1px,
+  2: 2px,
+  3: 3px,
+  4: 4px,
+  5: 5px,
+) !default;
+
+$enable-rounded: true !default;
+$border-radius: 0.25rem !default;
+$border-radius-sm: 0.2rem !default;
+$border-radius-lg: 0.3rem !default;
+$border-radius-pill: 50rem !default;
+
+//Button
+$btn-padding-y-sm: 0.25rem !default;
+$btn-padding-x-sm: 0.5rem !default;
+$btn-font-size-sm: $fs_sm !default;
+$btn-padding-y-lg: 0.5rem !default;
+$btn-padding-x-lg: 1rem !default;
+$btn-hover-bg-shade-amount: 15% !default;
+$btn-hover-bg-tint-amount: 15% !default;
+$btn-hover-border-shade-amount: 20% !default;
+$btn-hover-border-tint-amount: 10% !default;
+
+//Progress Bar
+$progress-height: 1rem !default;
+$progress-font-size: $fs_base * 0.75 !default;
+
+// List group
+$list-group-border-color: rgba($black, 0.125) !default;
+$list-group-item-bg-scale: -80% !default;
+$list-group-item-color-scale: 40% !default;
+
+$box-shadow:                 rgba(149, 157, 165, 0.2) 0px 8px 24px;
+$box-shadow-sm:               0 .125rem .25rem rgba($black, .075) !default;
+$box-shadow-lg:               0 1rem 3rem rgba($black, .175) !default;
+$box-shadow-inset:            inset 0 1px 2px rgba($black, .075) !default;

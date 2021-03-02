@@ -1,0 +1,46 @@
+@include extra-small {
+  .main {
+    width: calc(100vw - 15%);
+    background-color: bisque;
+  }
+}
+
+@include small-down {
+  .main {
+    width: calc(100vw - 15%);
+    background-color: aqua;
+  }
+}
+
+@include small-only {
+  .main {
+    width: calc(100vw - 15%);
+    background-color: red;
+  }
+}
+
+@include small-up {
+  .main {
+    width: calc(100vw - 15%);
+    background-color: plum;
+  }
+}
+@include medium-only {
+  .main {
+    width: calc(100vw - 15%);
+    background-color: blue;
+  }
+}
+@include medium-up {
+  .main {
+    width: calc(100vw - 15%);
+    background-color: yellow;
+  }
+}
+
+@include large {
+  .main {
+    width: calc(100vw - 15%);
+    background-color: white;
+  }
+}

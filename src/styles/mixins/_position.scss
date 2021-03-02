@@ -1,0 +1,77 @@
+@mixin position(
+  $pos,
+  $pos_type,
+  $pos1: 0,
+  $pos2: 0,
+  $index: null,
+  $w: null,
+  $h: null
+) {
+  position: $pos;
+
+  @if $index != "" {
+    z-index: $index;
+  }
+
+  @if $pos_type== "tl" {
+    @if type-of($pos1) ==number and unit($pos1) != "%" {
+      top: handler-output-rem($pos1);
+    } @else {
+      top: $pos1;
+    }
+
+    @if type-of($pos2) ==number and unit($pos2) != "%" {
+      left: handler-output-rem($pos2);
+    } @else {
+      left: $pos2;
+    }
+  } @else if $pos_type== "tr" {
+    @if type-of($pos1) ==number and unit($pos1) != "%" {
+      top: handler-output-rem($pos1);
+    } @else {
+      top: $pos1;
+    }
+
+    @if type-of($pos2) ==number and unit($pos2) != "%" {
+      right: handler-output-rem($pos2);
+    } @else {
+      right: $pos2;
+    }
+  } @else if $pos_type== "bl" {
+    @if type-of($pos1) ==number and unit($pos1) != "%" {
+      bottom: handler-output-rem($pos1);
+    } @else {
+      bottom: $pos1;
+    }
+
+    @if type-of($pos2) ==number and unit($pos2) != "%" {
+      left: handler-output-rem($pos2);
+    } @else {
+      left: $pos2;
+    }
+  } @else if $pos_type== "br" {
+    @if type-of($pos1) ==number and unit($pos1) != "%" {
+      bottom: handler-output-rem($pos1);
+    } @else {
+      bottom: $pos1;
+    }
+
+    @if type-of($pos2) ==number and unit($pos2) != "%" {
+      right: handler-output-rem($pos2);
+    } @else {
+      right: $pos2;
+    }
+  }
+
+  @if type-of($w) ==number and unit($w) != "%" {
+    width: calc-rem($w);
+  } @else {
+    width: $w;
+  }
+
+  @if type-of($h) ==number and unit($h) != "%" {
+    height: calc-rem($h);
+  } @else {
+    height: $h;
+  }
+}

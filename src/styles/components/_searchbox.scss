@@ -1,0 +1,23 @@
+.search {
+  &__container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    @include border-radius(40px);
+    box-shadow: $box-shadow;
+    width: 300px;
+    background-color: var(--box-color);
+
+  }
+  &__icon {
+    padding: 0.5rem;
+  }
+  &__box {
+    border: 0;
+    padding: 0.5rem 0.5rem 0.5rem 0;
+    flex: 1;
+    background-color: var(--box-color);
+  }
+}

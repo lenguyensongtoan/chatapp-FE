@@ -1,0 +1,11 @@
+.border {
+  @include border();
+}
+
+@each $color, $color-value in $colors {
+  @each $border, $width-value in $border-widths {
+    .border-#{$color}-#{$border} {
+      @include border-width($width-value, $color-value);
+    }
+  }
+}

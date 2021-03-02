@@ -1,0 +1,46 @@
+@each $spacer, $value in $spacers {
+  //margin
+  .mt-#{$spacer} {
+    @include mt($value);
+  }
+  .mb-#{$spacer} {
+    @include mb($value);
+  }
+  .ml-#{$spacer} {
+    @include ml($value);
+  }
+  .mr-#{$spacer} {
+    @include mr($value);
+  }
+  .my-#{$spacer} {
+    @include my($value);
+  }
+  .mx-#{$spacer} {
+    @include mx($value);
+  }
+  .ma-#{$spacer} {
+    @include ma($value);
+  }
+  //padding
+  .pt-#{$spacer} {
+    @include pt($value);
+  }
+  .pb-#{$spacer} {
+    @include pb($value);
+  }
+  .pl-#{$spacer} {
+    @include pl($value);
+  }
+  .pr-#{$spacer} {
+    @include pr($value);
+  }
+  .px-#{$spacer} {
+    @include px($value);
+  }
+  .py-#{$spacer} {
+    @include py($value);
+  }
+  .pa-#{$spacer} {
+    @include pa($value);
+  }
+}

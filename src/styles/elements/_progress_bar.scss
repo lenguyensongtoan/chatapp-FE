@@ -1,0 +1,23 @@
+.progress {
+  display: flex;
+  height: $progress-height;
+  overflow: hidden;
+  background-color: $gray-200;
+  @include fs($progress-font-size);
+  @include border-radius($border-radius);
+  @include box-shadow($box-shadow-inset);
+}
+
+.progress-bar {
+  overflow: hidden;
+  color: $white;
+  white-space: nowrap;
+  background-color: $primary;
+  @include flex(column, center, center);
+}
+
+@each $color, $value in $theme-colors {
+  .bg-#{$color} {
+    background-color: $value;
+  }
+}

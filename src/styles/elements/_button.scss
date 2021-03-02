@@ -1,0 +1,32 @@
+.button {
+  border: 1px solid transparent;
+  outline: none;
+  cursor: pointer;
+  @include button-size(null, null, 14px, 4px);
+}
+@each $color, $value in $theme-colors {
+  .button-#{$color} {
+    outline: none;
+    @include button-variant($value, $value, $white, $value);
+  }
+  .button-outline-#{$color} {
+    @include button-variant-outline($value);
+  }
+}
+.button-lg {
+  @include button-size(
+    $btn-padding-y-lg,
+    $btn-padding-x-lg,
+    $fs_lg,
+    $border-radius-lg
+  );
+}
+
+.button-sm {
+  @include button-size(
+    $btn-padding-y-sm,
+    $btn-padding-x-sm,
+    $fs_sm,
+    $border-radius-sm
+  );
+}

@@ -1,0 +1,44 @@
+@mixin button-size($padding-y, $padding-x, $font-size, $border-radius) {
+  padding: $padding-y $padding-x;
+  @include border-radius($border-radius);
+}
+
+@mixin button-variant(
+  $background,
+  $border,
+  $color: color-contrast($background),
+  $hover-color: color-contrast($hover-background),
+  $hover-background:
+    if(
+      $color == $color-contrast-light,
+      shade-color($background, $btn-hover-bg-shade-amount),
+      tint-color($background, $btn-hover-bg-tint-amount)
+    ),
+  $hover-border:
+    if(
+      $color == $color-contrast-light,
+      shade-color($border, $btn-hover-border-shade-amount),
+      tint-color($border, $btn-hover-border-tint-amount)
+    )
+) {
+  color: color-contrast($background);
+  background-color: $background;
+  border-color: $border;
+
+  &:hover {
+    background-color: $hover-background;
+    border-color: $hover-border;
+  }
+}
+
+@mixin button-variant-outline($color, $color-hover: color-contrast($color)) {
+  background-color: $white;
+  color: $color;
+  border-color: $color;
+
+  &:hover {
+    color: $color-hover;
+    background-color: $color;
+    border-color: $color;
+  }
+}

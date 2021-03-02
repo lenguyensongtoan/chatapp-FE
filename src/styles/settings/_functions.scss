@@ -1,0 +1,60 @@
+///* ========================================================================
+//   #FUNCTIONS
+//   ======================================================================== */
+
+// Calc Px to Rem
+@function calc-rem($size) {
+  $remSize: $size / 16px;
+  @return #{$remSize}rem;
+}
+
+@mixin font-size($font-size, $line-height: auto) {
+  font-size: ($font-size / 16) * 1rem;
+
+  @if $line-height==auto {
+    line-height: 1;
+  } @else {
+    @if (
+      type-of($line-height)
+        ==number or
+        $line-height==inherit or
+        $line-height==normal
+    ) {
+      line-height: ($line-height / 16) * 1rem;
+    } @else if ($line-height !=none and $line-height !=false) {
+      @warn 'D’oh! ‘#{$line-height}’ is not a valid value for `line-height`.';
+    }
+  }
+}
+
+@function handler-output-rem($param) {
+  @if type-of($param) !=0 and unit($param) == "px" {
+    @return calc-rem($param);
+  } @else {
+    @return 0;
+  }
+}
+
+@function color-contrast($color) {
+  @if (lightness($color) > 40) {
+    @return $color-contrast-dark;
+  } @else {
+    @return $color-contrast-light;
+  }
+}
+
+@function tint-color($color, $weight) {
+  @return mix(white, $color, $weight);
+}
+
+@function shade-color($color, $weight) {
+  @return mix(black, $color, $weight);
+}
+
+@function shift-color($color, $weight) {
+  @return if(
+    $weight > 0,
+    shade-color($color, $weight),
+    tint-color($color, -$weight)
+  );
+}

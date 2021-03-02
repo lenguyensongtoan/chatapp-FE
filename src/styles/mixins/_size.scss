@@ -1,0 +1,13 @@
+@mixin size($w, $h) {
+  @if type-of($w) ==number and unit($w) != "%" {
+    width: calc-rem($w);
+  } @else {
+    width: $w;
+  }
+
+  @if type-of($h) ==number and unit($h) != "%" {
+    height: calc-rem($h);
+  } @else {
+    height: $h;
+  }
+}
