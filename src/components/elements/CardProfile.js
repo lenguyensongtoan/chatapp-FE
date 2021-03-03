@@ -15,7 +15,9 @@ function CardProfile() {
         </div>
         <div className="card__content">
           <span className="card__content--name">Ankit Mishra</span>
-          <span className="card-profile__content--res">Last seen 3 minutes ago</span>
+          <span className="card-profile__content--res">
+            Last seen 3 minutes ago
+          </span>
         </div>
       </div>
 
@@ -31,8 +33,18 @@ function CardProfile() {
         <li type="button" class="card--item">
           <Camera />
         </li>
-        <li type="button" class="card--item">
+        <li type="button" class="card--item drop-down">
           <More />
+          <ul className="drop-down-content">
+            <li>
+              <p>Leave Conversation</p>
+              <i className="fas fa-sign-out-alt"></i>
+            </li>
+            <li>
+              <p>Delete Conversation</p>
+              <i className="fa fa-trash"></i>
+            </li>
+          </ul>
         </li>
       </ul>
     </div>

@@ -6,7 +6,7 @@
     border-radius: 5px;
     overflow: hidden;
     @include border-radius(40px);
-    box-shadow: $box-shadow;
+    box-shadow: $box-shadow-sm;
     width: 300px;
     background-color: var(--box-color);
   }

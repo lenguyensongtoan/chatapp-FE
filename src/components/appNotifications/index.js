@@ -1,4 +1,5 @@
 import CardSugest from "components/elements/CardSugest";
+import Modal from "components/elements/Modal";
 import CardNotification from "../elements/CardNotification";
 const AppNotification = () => {
   return (

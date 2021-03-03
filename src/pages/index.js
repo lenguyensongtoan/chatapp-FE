@@ -2,8 +2,8 @@ import AppRooms from "../components/appRooms";
 import AppChat from "../components/appChat";
 import AppNotification from "../components/appNotifications";
 import AppConfigTheme from "../components/appConfigTheme";
-
 import { useEffect } from "react";
+import Modal from "components/elements/Modal";
 
 export default function Index() {
   useEffect(() => {
@@ -49,17 +49,9 @@ export default function Index() {
           <AppChat />
           <AppNotification />
           <AppConfigTheme />
-          {/* <div style={{ display: "flex", flexDirection: "column" }}>
-            <Card />
-            <CardNotification />
-            <CardSugest />
-            <SearchBox />
-            <AppBar />
-            <Link />
-          </div> */}
         </div>
       </main>
       <footer></footer>
     </>
-  )
+  );
 }

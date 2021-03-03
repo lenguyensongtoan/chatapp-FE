@@ -134,3 +134,16 @@ body {
     width: 100vw;
   }
 }
+
+.modal-wrap {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(17, 16, 16, 0.8);
+  z-index: 1000;
+  position: fixed;
+  display:  flex;
+  align-items: center;
+  justify-content: center;
+}

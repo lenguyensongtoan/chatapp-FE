@@ -20,3 +20,12 @@
     color: var(--text-dark);
   }
 }
+.btn-add {
+  border-radius: 50%;
+  font-size: larger;
+  border: none;
+  color: $white;
+  background-color: var(--button-bg) ;
+  @include size(30px,30px);
+  
+}

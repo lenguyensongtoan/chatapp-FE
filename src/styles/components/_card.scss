@@ -1,7 +1,7 @@
 .card {
   @include size(300px, 70px);
   @include border-radius(8px);
-  box-shadow: $box-shadow;
+  box-shadow: $box-shadow-sm;
   background-color: var(--box-color);
   display: flex;
   align-items: center;

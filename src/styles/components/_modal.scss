@@ -1,0 +1,30 @@
+.modal {
+  @include border-radius(8px);
+  background-color: var(--box-color);
+  @include size(400px, 500px);
+  color: var(--text-dark);
+  border: 1px solid var(--box-border);
+  position: absolute;
+  &__header {
+    justify-content: center;
+    align-items: center;
+    h2 {
+      @include fs(20, 16);
+    }
+  }
+
+  &__group {
+    max-height: 250px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    &--item {
+      @include size(350px, 60px);
+    }
+  }
+
+  &__btn {
+    border: none;
+    outline: none;
+    @include size(80px, 40px);
+  }
+}
