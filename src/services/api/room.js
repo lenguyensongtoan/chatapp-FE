@@ -7,9 +7,9 @@ export const signup = async (data) => {
   return APIService.post("/auth/signup", data);
 };
 export const forgot = async (data) => {
-  return APIService.post("/auth/forgot_password", data);
+  return APIService.post("/auth/forgot", data);
 };
 
 export const reset = async (data) => {
-  return APIService.post("/auth/reset_password", data);
+  return APIService.post("/auth/reset", data);
 };

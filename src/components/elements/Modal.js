@@ -10,7 +10,7 @@ function Modal({ setShow }) {
     <div className="modal-wrap">
       <div className="modal pa-4">
         <div className="d-flex justify-end">
-          <i onClick={close} className="button fa fa-close"></i>
+          <i aria-hidden onClick={close} className="button fa fa-close"></i>
         </div>
         <div className="modal__header mb-2">
           <input
@@ -23,7 +23,7 @@ function Modal({ setShow }) {
         <div className="modal__content">
           <div className="d-flex justify-around">
             <div className="search__container">
-              <i className="fa fa-search search__icon"></i>
+              <i aria-hidden className="fa fa-search search__icon"></i>
               <input
                 className="search__box"
                 type="search"
@@ -47,7 +47,7 @@ function Modal({ setShow }) {
                   <div className="card__content">
                     <span className="card__content--name">Ankit Mishra</span>
                   </div>
-                  <i className="fa fa-trash"></i>
+                  <i aria-hidden className="fa fa-trash"></i>
                 </div>
               </li>
               <li>
@@ -61,7 +61,7 @@ function Modal({ setShow }) {
                   <div className="card__content">
                     <span className="card__content--name">Ankit Mishra</span>
                   </div>
-                  <i className="fa fa-trash"></i>
+                  <i aria-hidden className="fa fa-trash"></i>
                 </div>
               </li>{" "}
               <li>
@@ -75,7 +75,7 @@ function Modal({ setShow }) {
                   <div className="card__content">
                     <span className="card__content--name">Ankit Mishra</span>
                   </div>
-                  <i className="fa fa-trash"></i>
+                  <i aria-hidden className="fa fa-trash"></i>
                 </div>
               </li>{" "}
               <li>
@@ -89,7 +89,7 @@ function Modal({ setShow }) {
                   <div className="card__content">
                     <span className="card__content--name">Ankit Mishra</span>
                   </div>
-                  <i className="fa fa-trash"></i>
+                  <i aria-hidden className="fa fa-trash"></i>
                 </div>
               </li>
               <li>
@@ -103,7 +103,7 @@ function Modal({ setShow }) {
                   <div className="card__content">
                     <span className="card__content--name">Ankit Mishra</span>
                   </div>
-                  <i className="fa fa-trash"></i>
+                  <i aria-hidden className="fa fa-trash"></i>
                 </div>
               </li>
               <li>
@@ -117,7 +117,7 @@ function Modal({ setShow }) {
                   <div className="card__content">
                     <span className="card__content--name">Ankit Mishra</span>
                   </div>
-                  <i className="fa fa-trash"></i>
+                  <i aria-hidden className="fa fa-trash"></i>
                 </div>
               </li>
             </ul>

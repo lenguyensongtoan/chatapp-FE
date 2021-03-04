@@ -5,15 +5,15 @@ function Link() {
     <ul className="link">
       <li className="link--active">
         DIRECT
-        <span class="item__badge"></span>
+        <span className="item__badge"></span>
       </li>
       <li>
         GROUP
-        <span class="item__badge"></span>
+        <span className="item__badge"></span>
       </li>
       <li>
         PUBLIC
-        <span class="item__badge"></span>
+        <span className="item__badge"></span>
       </li>
     </ul>
   );

@@ -6,9 +6,6 @@ import APIService from 'services/api/lib';
 const initialState = {
   isAuthenticated: false,
   accessToken: '',
-  useData: '',
-  remember: false,
-  connectionId: '',
 };
 
 const loadAuthDataFromStorage = (key) => {

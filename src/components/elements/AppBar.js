@@ -6,19 +6,19 @@ import Group from "../../styles/images/group (1).svg";
 function AppBar() {
   return (
     <ul className="app-bar">
-      <li type="button" class="app-bar--item">
+      <li type="button" className="app-bar--item">
         <Chat />
-        <span class="icon-button__badge">3</span>
+        <span className="icon-button__badge">3</span>
       </li>
-      <li type="button" class="app-bar--item">
+      <li type="button" className="app-bar--item">
         <Phone />
-        {/* <span class="icon-button__badge"></span> */}
+        {/* <span className="icon-button__badge"></span> */}
       </li>
       <li type="button" className="app-bar--item">
         <Mail />
-        <span class="icon-button__badge">4</span>
+        <span className="icon-button__badge">4</span>
       </li>
-      <li type="button" class="app-bar--item">
+      <li type="button" className="app-bar--item">
         <Group />
         {/* <span class="icon-button__badge"></span> */}
       </li>

@@ -27,22 +27,22 @@ function CardProfile() {
           justifyContent: "space-between",
         }}
       >
-        <li type="button" class="card--item">
+        <li type="button" className="card--item">
           <Phone />
         </li>
-        <li type="button" class="card--item">
+        <li type="button" className="card--item">
           <Camera />
         </li>
-        <li type="button" class="card--item drop-down">
+        <li type="button" className="card--item drop-down">
           <More />
           <ul className="drop-down-content">
             <li>
               <p>Leave Conversation</p>
-              <i className="fas fa-sign-out-alt"></i>
+              <i aria-hidden className="fas fa-sign-out-alt"></i>
             </li>
             <li>
               <p>Delete Conversation</p>
-              <i className="fa fa-trash"></i>
+              <i aria-hidden className="fa fa-trash"></i>
             </li>
           </ul>
         </li>

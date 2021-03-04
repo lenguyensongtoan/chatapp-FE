@@ -10,13 +10,13 @@ function CardNotification() {
         ></img>
       </div>
       <div className="card-notification__content">
-        <p className="card-notification__content--name">
+        <div className="card-notification__content--name">
           @Ankit{" "}
           <span className="card-notification__content--res">
             mention you in "Trip to Go"
             <p className="card-notification__content--time">5 mins ago</p>
           </span>
-        </p>
+        </div>
       </div>
     </div>
   );
