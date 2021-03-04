@@ -4,12 +4,10 @@ import { createContainer } from "unstated-next";
 import { useForm } from "hooks";
 import api from "services/api";
 import useApiCaller from "../../hooks/useApiCaller";
-import store from "store";
 
 export const FormStoreContainer = createContainer(useForm);
 
 function ForgotPassword({setIsLoading}) {
-  const { dispatch } = store.useContainer();
   const form = FormStoreContainer.useContainer();
   const { handleCallingAPI: handleForgot } = useApiCaller({
     apiCaller: api.auth.forgot,

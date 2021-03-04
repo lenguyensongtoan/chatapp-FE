@@ -12,21 +12,20 @@ function Auth() {
     const forgotForm = document.querySelector(".forgot-form");
 
     sign_up_btn.addEventListener("click", () => {
-      setTimeout(() => {
-        container.classList.add("sign-up-mode");
-        forgotForm.classList.add("hidden");
-        signupForm.classList.remove("hidden");
-      }, 1500);
+      container.classList.add("sign-up-mode");
+      container.classList.remove("forgot-mode");
+      forgotForm.classList.add("hidden");
+      signupForm.classList.remove("hidden");
     });
     forgot_btn.addEventListener("click", () => {
-      setTimeout(() => {
-        container.classList.add("sign-up-mode");
-        forgotForm.classList.remove("hidden");
-        signupForm.classList.add("hidden");
-      }, 1500);
+      container.classList.add("forgot-mode");
+      container.classList.remove("sign-up-mode");
+      forgotForm.classList.remove("hidden");
+      signupForm.classList.add("hidden");
     });
     sign_in_btn.addEventListener("click", () => {
       container.classList.remove("sign-up-mode");
+      container.classList.remove("forgot-mode");
     });
   }, []);
 
